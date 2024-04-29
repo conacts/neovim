@@ -1,5 +1,5 @@
 vim.opt.guicursor = ""
-vim.cmd("colorscheme default")
+vim.cmd("colorscheme habamax")
 
 vim.opt.clipboard = "unnamedplus"
 

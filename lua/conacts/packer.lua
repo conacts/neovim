@@ -6,16 +6,9 @@ return require('packer').startup(function(use)
 
     use 'williamboman/mason.nvim'
 	use 'github/copilot.vim'      -- ai guy
-	use 'preservim/nerdtree'      -- nerding out
-    use {
-      'nvim-telescope/telescope.nvim', tag = '0.1.3',
-      requires = { {'nvim-lua/plenary.nvim'} }
-    }
-
-	use { 'ThePrimeagen/harpoon' } -- primetime
+	use 'preservim/nerdtree'
+    use { 'nvim-telescope/telescope.nvim', tag = '0.1.3', requires = { {'nvim-lua/plenary.nvim'} } }
+	use { 'ThePrimeagen/harpoon', requires = { {'nvim-lua/plenary.nvim'} } } -- primetime
 	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- nvim treesitter
-
-
-	use 'neovim/nvim-lspconfig'   -- collection of configurations for built-in LSP client
-	-- use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+	use 'neovim/nvim-lspconfig' -- collection of configurations for built-in LSP client
 end)

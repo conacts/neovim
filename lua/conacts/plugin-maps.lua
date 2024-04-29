@@ -3,7 +3,7 @@
 vim.keymap.set("n", "<leader>mu", "<Plug>MarkdownPreview")
 
 -- nerd tree
-vim.keymap.set("n", "<leader>pv", ":NERDTreeToggle<CR>")
+-- vim.keymap.set("n", "<leader>pv", ":NERDTreeToggle<CR>")
 vim.keymap.set("n", "<leader>nn", ":NERDTreeFocus<CR>")
 -- switch window panes <ctrl>ww
 
@@ -24,3 +24,10 @@ vim.keymap.set("n", "<leader>he", function() ui.toggle_quick_menu() end, {})
 vim.keymap.set("n", "<leader>h1", function() ui.nav_file(1) end, {})
 vim.keymap.set("n", "<leader>h2", function() ui.nav_file(2) end, {})
 vim.keymap.set("n", "<leader>h3", function() ui.nav_file(3) end, {})
+
+-- inline errors
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+    vim.lsp.diagnostic.on_publish_diagnostics, {
+        virtual_text = false
+    }
+)
