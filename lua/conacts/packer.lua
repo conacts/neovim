@@ -7,6 +7,7 @@ return require('packer').startup(function(use)
     use 'williamboman/mason.nvim'
 	use 'github/copilot.vim'      -- ai guy
 	use 'preservim/nerdtree'
+    use 'airblade/vim-gitgutter' -- vim overlays
     use { 'nvim-telescope/telescope.nvim', tag = '0.1.3', requires = { {'nvim-lua/plenary.nvim'} } }
 	use { 'ThePrimeagen/harpoon', requires = { {'nvim-lua/plenary.nvim'} } } -- primetime
 	use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- nvim treesitter

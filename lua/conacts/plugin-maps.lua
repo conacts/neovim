@@ -31,3 +31,17 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
         virtual_text = false
     }
 )
+
+-- git gutter
+--
+-- Ensure vim-gitgutter is always highlighting diffs
+vim.g.gitgutter_enabled = 1  -- Ensure gitgutter is enabled by default
+-- vim.g.gitgutter_highlight_lines = 1  -- Highlight the entire changed lines
+-- Map <leader>gl to GitGutterToggle
+
+vim.cmd [[
+  highlight GitGutterDelete guifg=#FFFF00 ctermfg=11 " Bright Yellow for deletions
+]]
+
+vim.api.nvim_set_keymap('n', '<leader>gl', ':GitGutterToggle<CR>', { noremap = true, silent = true })
+
