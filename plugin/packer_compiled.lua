@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/connorsheehan/.cache/nvim/packer_hererocks/2.1.1720049189/share/lua/5.1/?.lua;/Users/connorsheehan/.cache/nvim/packer_hererocks/2.1.1720049189/share/lua/5.1/?/init.lua;/Users/connorsheehan/.cache/nvim/packer_hererocks/2.1.1720049189/lib/luarocks/rocks-5.1/?.lua;/Users/connorsheehan/.cache/nvim/packer_hererocks/2.1.1720049189/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/connorsheehan/.cache/nvim/packer_hererocks/2.1.1720049189/lib/lua/5.1/?.so"
+local package_path_str = "/Users/mcb7642/.cache/nvim/packer_hererocks/2.1.1724512491/share/lua/5.1/?.lua;/Users/mcb7642/.cache/nvim/packer_hererocks/2.1.1724512491/share/lua/5.1/?/init.lua;/Users/mcb7642/.cache/nvim/packer_hererocks/2.1.1724512491/lib/luarocks/rocks-5.1/?.lua;/Users/mcb7642/.cache/nvim/packer_hererocks/2.1.1724512491/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/mcb7642/.cache/nvim/packer_hererocks/2.1.1724512491/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,52 +76,62 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["copilot.vim"] = {
     loaded = true,
-    path = "/Users/connorsheehan/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    path = "/Users/mcb7642/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
   harpoon = {
     loaded = true,
-    path = "/Users/connorsheehan/.local/share/nvim/site/pack/packer/start/harpoon",
+    path = "/Users/mcb7642/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["mason.nvim"] = {
     loaded = true,
-    path = "/Users/connorsheehan/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "/Users/mcb7642/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   nerdtree = {
     loaded = true,
-    path = "/Users/connorsheehan/.local/share/nvim/site/pack/packer/start/nerdtree",
+    path = "/Users/mcb7642/.local/share/nvim/site/pack/packer/start/nerdtree",
     url = "https://github.com/preservim/nerdtree"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/connorsheehan/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/Users/mcb7642/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/connorsheehan/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/Users/mcb7642/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/connorsheehan/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/Users/mcb7642/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/connorsheehan/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/Users/mcb7642/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/Users/mcb7642/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
+  },
+  ["telescope-media-files.nvim"] = {
+    loaded = true,
+    path = "/Users/mcb7642/.local/share/nvim/site/pack/packer/start/telescope-media-files.nvim",
+    url = "https://github.com/nvim-telescope/telescope-media-files.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/Users/connorsheehan/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/Users/mcb7642/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-gitgutter"] = {
     loaded = true,
-    path = "/Users/connorsheehan/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
+    path = "/Users/mcb7642/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
   }
 }
